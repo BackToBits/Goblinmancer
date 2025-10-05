@@ -48,17 +48,21 @@ MonoBehaviour:
   musicVolume: 1
   ambienceVolume: 1
   SFXVolume: 1
+  masterMuted: 0
+  musicMuted: 0
+  ambienceMuted: 0
+  SFXMuted: 0
   <ambience>k__BackingField:
     Guid:
-      Data1: 223465363
-      Data2: 1234368518
-      Data3: -1616460625
-      Data4: -650137001
-    Path: event:/SpawnGoblin
+      Data1: -1313151550
+      Data2: 1296736903
+      Data3: 198738608
+      Data4: 865376899
+    Path: event:/Silence
   <music>k__BackingField:
     Guid:
-      Data1: 223465363
-      Data2: 1234368518
-      Data3: -1616460625
-      Data4: -650137001
-    Path: event:/SpawnGoblin
+      Data1: -1313151550
+      Data2: 1296736903
+      Data3: 198738608
+      Data4: 865376899
+    Path: event:/Silence

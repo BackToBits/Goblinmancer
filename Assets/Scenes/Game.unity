@@ -315,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <music>k__BackingField.Path
-      value: event:/Silence
+      value: event:/MusicMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <ambience>k__BackingField.Path
@@ -323,19 +323,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <music>k__BackingField.Guid.Data1
-      value: -1313151550
+      value: -81256859
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <music>k__BackingField.Guid.Data2
-      value: 1296736903
+      value: 1270148540
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <music>k__BackingField.Guid.Data3
-      value: 198738608
+      value: -781910873
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <music>k__BackingField.Guid.Data4
-      value: 865376899
+      value: 1588461098
       objectReference: {fileID: 0}
     - target: {fileID: 7482184117333195867, guid: dd0d41fdc86adc949a50df9109433985, type: 3}
       propertyPath: <ambience>k__BackingField.Guid.Data1

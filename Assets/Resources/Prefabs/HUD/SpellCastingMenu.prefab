@@ -46,12 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpellCastingMenu
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1270901288
+      Data2: 1189625640
+      Data3: 803502501
+      Data4: 2130731895
+    Path: event:/ButtonClick
   _menuTransform: {fileID: 0}
   _animationDuration: 0.5
   _closedPosition: {x: 0, y: -300, z: 0}
-  _state: 0

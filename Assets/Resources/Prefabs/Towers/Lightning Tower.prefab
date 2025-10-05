@@ -139,12 +139,13 @@ MonoBehaviour:
   _size: 0.5
   _deathSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  _bodiesPrice: 0
+      Data1: -552039197
+      Data2: 1164551433
+      Data3: 1040271492
+      Data4: 1162150392
+    Path: event:/BuldingDestruction
+  tile: {fileID: 0}
+  _towerType: 0
   _placeSound:
     Guid:
       Data1: 0
@@ -154,11 +155,11 @@ MonoBehaviour:
     Path: 
   _interactSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1270901288
+      Data2: 1189625640
+      Data3: 803502501
+      Data4: 2130731895
+    Path: event:/ButtonClick
   _cooldownBetweenAttacks: 0
 --- !u!114 &4915377090042301215
 MonoBehaviour:

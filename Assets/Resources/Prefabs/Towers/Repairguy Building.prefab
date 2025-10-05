@@ -104,8 +104,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RepairguyBuilding
   _maxHealth: 80
   _size: 0.5
-  _targetingPriority: 0
-  _bodiesPrice: 50
-  _canAttack: 0
-  _damage: 0
-  _attackCooldown: 0
+  _deathSound:
+    Guid:
+      Data1: -552039197
+      Data2: 1164551433
+      Data3: 1040271492
+      Data4: 1162150392
+    Path: event:/BuldingDestruction
+  tile: {fileID: 0}
+  _towerType: 0
+  _placeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  _interactSound:
+    Guid:
+      Data1: -1270901288
+      Data2: 1189625640
+      Data3: 803502501
+      Data4: 2130731895
+    Path: event:/ButtonClick
