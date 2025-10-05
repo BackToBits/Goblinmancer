@@ -1,19 +1,20 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Shield : MonoBehaviour
 {
+    public MeshRenderer _renderer;
     [SerializeField] float dissolveSpeed = 0.6f;
     [SerializeField] float waveAmplitude = 1f;
     [SerializeField] float pulseSpeed = 3f;
     private Vector3 _baseScale;
-    private Renderer _renderer;
 
     void Awake()
     {
-        _renderer = GetComponent<Renderer>();
-        StartCoroutine(DeactivateShield());
+        _renderer = GetComponent<MeshRenderer>();
+        //StartCoroutine(DeactivateShield());
         _baseScale = transform.localScale;
     }
 
@@ -25,33 +26,36 @@ public class Shield : MonoBehaviour
 
     public IEnumerator DeactivateShield()
     {
-        _renderer.material.SetFloat("_DissolveFactor", 0f);
+        if(_renderer == null) _renderer = GetComponent<MeshRenderer>();
+        _renderer.sharedMaterial.SetFloat("_DissolveFactor", 0f);
         float start = 0f;
         float target = 1.1f;
         float lerp = 0f;
         while(lerp < 1)
         {
-            _renderer.material.SetFloat("_DissolveFactor", Mathf.Lerp(start, target, lerp));
+            float value = Mathf.Lerp(start, target, lerp);
+            _renderer.sharedMaterial.SetFloat("_DissolveFactor", value);
             lerp += Time.deltaTime * dissolveSpeed;
             yield return null;
         }
-        _renderer.material.SetFloat("_DissolveFactor", target);
-        yield return new WaitForSeconds(3f);
-        StartCoroutine(ActivateShield());
+        _renderer.sharedMaterial.SetFloat("_DissolveFactor", 1f);
+        Destroy(this);
     }
 
     public IEnumerator ActivateShield()
     {
-        _renderer.material.SetFloat("_DissolveFactor", 1f);
+        if (_renderer == null) _renderer = GetComponent<MeshRenderer>();
+        _renderer.sharedMaterial.SetFloat("_DissolveFactor", 1f);
         float start = 1f;
         float target = 0f;
         float lerp = 0f;
         while (lerp < 1)
         {
-            _renderer.material.SetFloat("_DissolveFactor", Mathf.Lerp(start, target, lerp));
+            float value = Mathf.Lerp(start, target, lerp);
+            _renderer.sharedMaterial.SetFloat("_DissolveFactor", value);
             lerp += Time.deltaTime * dissolveSpeed;
             yield return null;
         }
-        _renderer.material.SetFloat("_DissolveFactor", target);
+        _renderer.sharedMaterial.SetFloat("_DissolveFactor", 0f);
     }
 }
