@@ -57,6 +57,7 @@ MonoBehaviour:
       Data3: 2114857900
       Data4: 1407680021
     Path: event:/DamageFlask
+  _explosionPrefab: {fileID: 4608929976795634067, guid: 620b6fe649207324c81f0b163e27c8e7, type: 3}
   _explosionRadius: 5
   _curvature: 0.5
   _slowAmount: 60

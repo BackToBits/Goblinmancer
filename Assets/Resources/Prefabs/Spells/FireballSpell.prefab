@@ -293,7 +293,7 @@ MonoBehaviour:
       Data4: 2130731895
     Path: event:/ButtonClick
   _menuTransform: {fileID: 1563263415339220317}
-  _animationDuration: 3
+  _animationDuration: 1
   _closedPosition: {x: 0, y: -300, z: 0}
   _superOpenOffset: 120
   _cooldown: 20
