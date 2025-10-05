@@ -155,6 +155,10 @@ public class GameManager : MonoBehaviour
         {
             round = _freePlay;
             round.TotalRandomEnemies = Mathf.RoundToInt(round.TotalRandomEnemies * Mathf.Pow(_freePlayEnemyIncreaseRate, _currentRound - _rounds.Length + 1)); // Increase enemies in free play mode
+            foreach (FixedRoundEnemy fixedEnemy in round.FixedEnemiesInRound)
+            {
+                fixedEnemy.amount = Mathf.RoundToInt(fixedEnemy.amount * Mathf.Pow(_freePlayEnemyIncreaseRate, _currentRound - _rounds.Length + 1));
+            }
         }
         for (int i = 0; i < round.TotalRandomEnemies; i++)
         {
