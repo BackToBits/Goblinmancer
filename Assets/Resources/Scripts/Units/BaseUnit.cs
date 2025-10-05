@@ -219,7 +219,7 @@ public abstract class BaseUnit : Hittable
     IEnumerator SteppingCoroutine()
     {
         _stepping = true;
-        while (_moving && !_dead)
+        while (_moving && !_dead && !_paused)
         {
             while (_stepping)
             {

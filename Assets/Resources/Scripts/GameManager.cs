@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] SpellCastingMenu _spellCastingMenu;
     [SerializeField] SpellUnlockMenu _spellUnlockMenu;
     [SerializeField] NextRoundMenu _nextRoundMenu;
+    [SerializeField] CurrencyIndicator _currencyIndicator;
     [SerializeField] float _updateGoblinSoundsInterval = 1f;
     [SerializeField] int _maxExpectedGoblin = 500; // Used for audio manager to know the max number of goblins to expect
     List<AllyUnit> _alliedUnits = new List<AllyUnit>();
@@ -70,6 +71,8 @@ public class GameManager : MonoBehaviour
         _constructionMenu.Init(_towerPrices);
 
         _spellUnlockMenu.Init(_spellUnlockPrices);
+        
+        _currencyIndicator.UpdateCurrencyDisplay(GetBodies(), GetBlood());
     }
 
     void Update()
@@ -503,7 +506,7 @@ public class GameManager : MonoBehaviour
             }
             cemeteries.RemoveAt(index);
         }
-
+        _currencyIndicator.UpdateCurrencyDisplay(GetBodies(), GetBlood());
     }
 
     /// <summary>
@@ -530,6 +533,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("Not enough bodies to remove!");
         }
+        _currencyIndicator.UpdateCurrencyDisplay(GetBodies(), GetBlood());
     }
 
     public void EndGame()
@@ -545,6 +549,7 @@ public class GameManager : MonoBehaviour
     {
         _blood += amount;
         if (_blood > _maxBlood) _blood = _maxBlood;
+        _currencyIndicator.UpdateCurrencyDisplay(GetBodies(), GetBlood());
     }
 
     /// <summary>
@@ -630,6 +635,7 @@ public class GameManager : MonoBehaviour
     {
         _maxBlood += numberBlood;
         if (_blood > _maxBlood) _blood = _maxBlood;
+        _currencyIndicator.UpdateCurrencyDisplay(GetBodies(), GetBlood());
     }
 
     /// <summary>
@@ -759,6 +765,7 @@ public class GameManager : MonoBehaviour
     public void AddCemetery(Cemetery cemetery)
     {
         _cemeteries.Add(cemetery);
+        _currencyIndicator.UpdateCurrencyDisplay(GetBodies(), GetBlood());
     }
 
     /// <summary>
@@ -790,8 +797,12 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Hides the HUD and shows the cancel menu if specified.
     /// </summary>
-    public void HideHUD(bool showCancel = true)
+    public void HideHUD(bool showCancel = true, bool hideCurrency = false)
     {
+        if (hideCurrency)
+        {
+            _currencyIndicator.CloseMenu();
+        }
         if (_currentPhase == PhaseEnum.Build)
         {
             _nextRoundMenu.CloseMenu();
@@ -819,6 +830,7 @@ public class GameManager : MonoBehaviour
             _cancelMenu.CloseMenu();
             _unitMenu.CloseMenu();
             _spellUnlockMenu.CloseMenu();
+            _currencyIndicator.OpenMenu();
         }
         else if (_currentPhase == PhaseEnum.Combat)
         {
@@ -828,6 +840,7 @@ public class GameManager : MonoBehaviour
             _unitMenu.CloseMenu();
             _spellUnlockMenu.CloseMenu();
             _nextRoundMenu.CloseMenu();
+            _currencyIndicator.OpenMenu();
         }
     }
 
@@ -850,7 +863,7 @@ public class GameManager : MonoBehaviour
     public void OpenSpellUnlockMenu()
     {
         _spellUnlockMenu.OpenMenu();
-        HideHUD();
+        HideHUD(hideCurrency: true);
     }
 
     /// <summary>

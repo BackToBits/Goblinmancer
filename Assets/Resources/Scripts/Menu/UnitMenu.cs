@@ -157,6 +157,6 @@ public class UnitMenu : BaseMenu
 
         _state = MenuState.Open;
         _menuTransform.DOLocalMove(Vector3.zero, _animationDuration).SetEase(Ease.OutBack);
-        GameManager.Instance.HideHUD();
+        GameManager.Instance.HideHUD(hideCurrency: true);
     }
 }

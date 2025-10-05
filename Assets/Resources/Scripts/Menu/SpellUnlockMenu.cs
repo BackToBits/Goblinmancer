@@ -81,7 +81,7 @@ public class SpellUnlockMenu : BaseMenu
         if (_state == MenuState.Open) return;
 
         base.OpenMenu();
-        GameManager.Instance.HideHUD();
+        GameManager.Instance.HideHUD(hideCurrency: true);
 
         BloodAmountText.text = GameManager.Instance.GetBlood().ToString() + "/" + GameManager.Instance.GetMaxBlood().ToString();
         ZombieAmountText.text = GameManager.Instance.GetBodies().ToString() + "/" + GameManager.Instance.GetMaxBodies().ToString();

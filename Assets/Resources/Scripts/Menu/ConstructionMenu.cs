@@ -14,19 +14,9 @@ public class ConstructionMenu : BaseMenu
         public TextMeshProUGUI bloodPriceText;
     }
     [SerializeField] List<TowerArticle> _articles = new List<TowerArticle>();
-    [SerializeField] TextMeshProUGUI ZombieAmountText;
-    [SerializeField] TextMeshProUGUI BloodAmountText;
     [SerializeField] float _superOpenOffset = -170f;
     List<TowerPrice> _prices = new List<TowerPrice>();
     
-    void Update()
-    {
-        if (_state != MenuState.SuperOpen) return;
-        // Update resources display
-        ZombieAmountText.text = GameManager.Instance.GetBodies().ToString() + "/" + GameManager.Instance.GetMaxBodies().ToString();
-        BloodAmountText.text = GameManager.Instance.GetBlood().ToString() + "/" + GameManager.Instance.GetMaxBlood().ToString();
-    }
-
     /// <summary>
     /// Initializes the construction menu with tower prices.
     /// </summary>
