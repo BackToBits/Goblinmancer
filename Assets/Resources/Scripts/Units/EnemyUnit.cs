@@ -9,4 +9,10 @@ public class EnemyUnit : BaseUnit
     public int BloodReward => _bloodReward;
     [SerializeField] int _bodyReward = 1;
     [SerializeField] int _bloodReward = 3;
+
+    protected override void Die()
+    {
+        base.Die();
+        GameManager.Instance.CheckRoundEnd();
+    }
 }

@@ -930,6 +930,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void CheckRoundEnd()
+    {
+        foreach (EnemyUnit unit in _enemyUnits)
+        {
+            if (!unit.Dead)
+            {
+                return;
+            }
+        }
+        EndRound();
+    }
+
     private IEnumerator DoPortalAnimation()
     {
         Debug.Log("Starting portal animation for defeated enemies...");
