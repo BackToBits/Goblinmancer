@@ -57,6 +57,7 @@ MonoBehaviour:
       Data3: 674313375
       Data4: 1052026887
     Path: event:/HealthFlask
+  _explosionPrefab: {fileID: 5334410332278085481, guid: 9b3cbd811de57f1439e9fbe710c86824, type: 3}
   _explosionRadius: 5
   _curvature: 1
 --- !u!1001 &2556991856719971862
