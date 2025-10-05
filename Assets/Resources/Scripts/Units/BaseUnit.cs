@@ -5,6 +5,7 @@ using DG.Tweening;
 using UnityEditor.UI;
 using UnityEditor.Build;
 using NUnit.Framework;
+using FMODUnity;
 
 /// <summary>
 /// Base class for all units, enemy and ally
@@ -16,6 +17,9 @@ public abstract class BaseUnit : Hittable
     [SerializeField] protected float _cooldownBetweenAttacks = 0.2f;
     [SerializeField] protected float _spawnTweenDuration = 1f;
     [SerializeField] protected Animator _animator;
+    [SerializeField] protected float _stepHeight = 0.5f;
+    [SerializeField] protected float _stepDuration = 0.1f; // Time between steps when moving
+    [SerializeField] protected EventReference _stepSound;
     protected float _slowMultiplier = 1f; // Multiplier for movement speed when slowed
     protected float _hastenMultiplier = 1f; // Multiplier for movement speed when hastened
     protected Hittable _target;
@@ -24,6 +28,8 @@ public abstract class BaseUnit : Hittable
     protected float _currentAttackCooldown;
     protected int _currentAttackIndex = 0;
     protected List<BaseAttack> _attacks = new List<BaseAttack>();
+    protected bool _moving = false;
+    protected bool _stepping = false;
 
     /// <summary>
     /// Initializes the unit's current health and its squared size, as well as its attacks. Can be overriden by derived classes.
@@ -62,9 +68,14 @@ public abstract class BaseUnit : Hittable
         {
             MoveToTarget();
         }
-        else if (_currentAttackCooldown <= 0f)
+        else
         {
-            CheckAttack();
+            if (_moving)
+            {
+                _moving = false;
+            }
+            if (_currentAttackCooldown <= 0f)
+                CheckAttack();
         }
         _currentAttackCooldown -= Time.deltaTime * _hastenMultiplier * _slowMultiplier;
     }
@@ -78,6 +89,11 @@ public abstract class BaseUnit : Hittable
         {
             transform.position = Vector3.MoveTowards(transform.position, _target.transform.position, _movementSpeed * Time.deltaTime * _slowMultiplier * _hastenMultiplier);
             transform.LookAt(_target.transform);
+        }
+        if (!_moving)
+        {
+            _moving = true;
+            StartCoroutine(SteppingCoroutine());
         }
     }
 
@@ -198,6 +214,38 @@ public abstract class BaseUnit : Hittable
         foreach (var attack in _attacks)
         {
             attack.RemoveHasten(hastenAmount);
+        }
+    }
+    IEnumerator SteppingCoroutine()
+    {
+        _stepping = true;
+        while (_moving && !_dead)
+        {
+            while (_stepping)
+            {
+                if (transform.position.y >= _stepHeight)
+                {
+                    _stepping = false;
+                    transform.position = new Vector3(transform.position.x, _stepHeight, transform.position.z);
+                    break;
+                }
+                else
+                    transform.position += Vector3.up * _stepHeight * Time.deltaTime / (_stepDuration / 2);
+                yield return new WaitForEndOfFrame();
+            }
+            while (!_stepping)
+            {
+                if (transform.position.y <= 0f)
+                {
+                    _stepping = true;
+                    transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+                    AudioManager.instance.PlayOneShot(_stepSound, transform.position);
+                    break;
+                }
+                else
+                    transform.position -= Vector3.up * _stepHeight * Time.deltaTime / (_stepDuration / 2);
+                yield return new WaitForEndOfFrame();
+            }
         }
     }
 }

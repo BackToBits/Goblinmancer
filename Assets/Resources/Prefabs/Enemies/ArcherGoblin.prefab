@@ -90,6 +90,15 @@ MonoBehaviour:
   _cooldownBetweenAttacks: 0.2
   _spawnTweenDuration: 1
   _animator: {fileID: 696278792665245150}
+  _stepHeight: 0.5
+  _stepDuration: 0.1
+  _stepSound:
+    Guid:
+      Data1: -1313151550
+      Data2: 1296736903
+      Data3: 198738608
+      Data4: 865376899
+    Path: event:/Silence
   _bodyReward: 1
   _bloodReward: 5
 --- !u!114 &8091357199125041030
