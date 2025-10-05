@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1946720606818000417}
   - component: {fileID: 6955597548649379628}
   - component: {fileID: 4915377090042301215}
+  - component: {fileID: -1132284606910774121}
   m_Layer: 0
   m_Name: Lightning Tower
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MonoBehaviour:
     Path: event:/LightingSpell
   _projectilePrefab: {fileID: 3519205912370290149, guid: 41190176e076b24449e141ba6dca4be1, type: 3}
   _projectileSpawnPoint: {fileID: 1738877687765385208}
+--- !u!114 &-1132284606910774121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592449965501199778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dda8bdd4767c0b43850e6be25ab76cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &1825240480419671306
 PrefabInstance:
   m_ObjectHideFlags: 0

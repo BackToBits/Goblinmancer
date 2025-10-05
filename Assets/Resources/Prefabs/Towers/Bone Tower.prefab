@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1475278558778764101}
   - component: {fileID: 9047792337331519980}
   - component: {fileID: 5154879161126856799}
+  - component: {fileID: 6255338908851175530}
   m_Layer: 0
   m_Name: Bone Tower
   m_TagString: Untagged
@@ -102,6 +103,19 @@ MonoBehaviour:
     Path: event:/BomberAttackSound
   _projectilePrefab: {fileID: -6575079870067616868, guid: 1e29fce6cfbf29446b66dc45b9e9c497, type: 3}
   _projectileSpawnPoint: {fileID: 7202520186880782380}
+--- !u!114 &6255338908851175530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029632354338462985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dda8bdd4767c0b43850e6be25ab76cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HighlightStructure
+  outlineLayerName: Outline
 --- !u!1 &6641396162422633720
 GameObject:
   m_ObjectHideFlags: 0
