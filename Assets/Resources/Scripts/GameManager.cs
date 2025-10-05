@@ -883,6 +883,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator DoPortalAnimation()
     {
+        Debug.Log("Starting portal animation for defeated enemies...");
         foreach (EnemyUnit unit in _enemyUnits)
         {
             for (int i = 0; i < unit.BodyReward; i++)
@@ -898,7 +899,7 @@ public class GameManager : MonoBehaviour
                 {
                     Destroy(unit.gameObject);
                 };
-                
+
                 portal.transform.DOScale(Vector3.zero, _portalAnimationDuration * 0.5f).SetEase(Ease.InOutCubic).onComplete = () =>
                 {
                     Destroy(portal);
@@ -918,7 +919,7 @@ public class GameManager : MonoBehaviour
         }
 
         _currentRound++;
-        if (_currentRound < _rounds.Length)
+        if (_currentRound == _rounds.Length)
         {
             Debug.Log("All rounds completed!");
         }

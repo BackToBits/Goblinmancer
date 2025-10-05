@@ -56,7 +56,10 @@ public class BaseTower : Hittable
     {
         AudioManager.instance.PlayOneShot(_deathSound, transform.position);
         GameManager.Instance.RemoveTower(this);
-        tile.BuildingDestroyed();
+        if (tile != null)
+        {
+            tile.BuildingDestroyed();
+        }
     }
 
     /// <summary>
