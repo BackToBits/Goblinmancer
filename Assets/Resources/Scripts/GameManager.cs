@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] SpellCastingMenu _spellCastingMenu;
     [SerializeField] SpellUnlockMenu _spellUnlockMenu;
     [SerializeField] NextRoundMenu _nextRoundMenu;
+    [SerializeField] float _updateGoblinSoundsInterval = 1f;
+    [SerializeField] int _maxExpectedGoblin = 500; // Used for audio manager to know the max number of goblins to expect
     List<AllyUnit> _alliedUnits = new List<AllyUnit>();
     List<EnemyUnit> _enemyUnits = new List<EnemyUnit>();
     List<BaseTower> _towers = new List<BaseTower>();
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour
     int _blood = 0;
     PhaseEnum _currentPhase = PhaseEnum.Build;
     Tile[] _tiles;
+    float _updateGoblinSoundsTimer = 0f;
     void Awake()
     {
         if (Instance == null)
@@ -77,6 +80,13 @@ public class GameManager : MonoBehaviour
             {
                 EndRound();
             }
+        }
+        _updateGoblinSoundsTimer += Time.deltaTime;
+        if (_updateGoblinSoundsTimer >= _updateGoblinSoundsInterval)
+        {
+            _updateGoblinSoundsTimer = 0f;
+            int goblinCount = GetAllAliveGoblins();
+            AudioManager.instance.UpdateGoblinNumber(goblinCount, _maxExpectedGoblin);
         }
     }
 
@@ -132,6 +142,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     void PrepareRound()
     {
+        AudioManager.instance.ChangePhase();
         Round round;
         if (_currentRound < _rounds.Length)
         {
@@ -214,6 +225,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     void EndRound()
     {
+        AudioManager.instance.ChangePhase();
         foreach (EnemyUnit unit in _enemyUnits)
         {
             if (!unit.Dead)
@@ -549,6 +561,26 @@ public class GameManager : MonoBehaviour
             }
         }
         return zombieCount;
+    }
+
+    int GetAllAliveGoblins()
+    {
+        int goblinCount = 0;
+        foreach (AllyUnit unit in _alliedUnits)
+        {
+            if (!unit.Dead)
+            {
+                goblinCount++;
+            }
+        }
+        foreach (EnemyUnit enemy in _enemyUnits)
+        {
+            if (!enemy.Dead)
+            {
+                goblinCount++;
+            }
+        }
+        return goblinCount;
     }
 
     /// <summary>
