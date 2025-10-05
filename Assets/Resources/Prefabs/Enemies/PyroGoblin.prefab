@@ -114,11 +114,11 @@ MonoBehaviour:
   _targetingPriority: 1
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 347396251
+      Data2: 1255200402
+      Data3: 2072402354
+      Data4: 128761217
+    Path: event:/PyromaniacAttack
   _projectilePrefab: {fileID: 3519205912370290149, guid: 5fb9aa56ba81ddd488b8b0b1d9fdf525, type: 3}
   _projectileSpawnPoint: {fileID: 7188822983357739112}
 --- !u!1001 &1338943927959856879

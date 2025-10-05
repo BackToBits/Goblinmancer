@@ -58,6 +58,7 @@ MonoBehaviour:
   _movementSpeed: 11
   _cooldownBetweenAttacks: 0.2
   _spawnTweenDuration: 1
+  _animator: {fileID: 0}
   cemetery: {fileID: 0}
   spawnRadius: 5
   unitType: 2
@@ -90,11 +91,11 @@ MonoBehaviour:
   _targetingPriority: 0
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -287476770
+      Data2: 1103829596
+      Data3: -1733624167
+      Data4: -951965099
+    Path: event:/BasicAttackSound
 --- !u!1 &6531831512463060974
 GameObject:
   m_ObjectHideFlags: 0

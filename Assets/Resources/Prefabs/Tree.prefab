@@ -144,9 +144,6 @@ MonoBehaviour:
       Data4: 0
     Path: 
   tile: {fileID: 0}
-  _price:
-    bodyPrice: 0
-    bloodPrice: 0
   _towerType: 6
   _placeSound:
     Guid:
@@ -157,8 +154,8 @@ MonoBehaviour:
     Path: 
   _interactSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1270901288
+      Data2: 1189625640
+      Data3: 803502501
+      Data4: 2130731895
+    Path: event:/ButtonClick

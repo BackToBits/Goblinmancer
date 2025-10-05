@@ -303,6 +303,7 @@ MonoBehaviour:
   _movementSpeed: 3
   _cooldownBetweenAttacks: 0.2
   _spawnTweenDuration: 1
+  _animator: {fileID: 0}
   _bodyReward: 0
   _bloodReward: 30
   _secondaryUnitPrefab1: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
@@ -333,11 +334,11 @@ MonoBehaviour:
   _targetingPriority: 2
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2042591075
+      Data2: 1148452496
+      Data3: 417563295
+      Data4: -1479132851
+    Path: event:/AreaAttack
   _radius: 5
 --- !u!114 &6381387047655904131
 MonoBehaviour:
@@ -361,11 +362,11 @@ MonoBehaviour:
   _targetingPriority: 2
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -287476770
+      Data2: 1103829596
+      Data3: -1733624167
+      Data4: -951965099
+    Path: event:/BasicAttackSound
 --- !u!1 &8193746787154929387
 GameObject:
   m_ObjectHideFlags: 0

@@ -114,11 +114,11 @@ MonoBehaviour:
   _targetingPriority: 0
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 798774945
+      Data2: 1170780019
+      Data3: 1246141368
+      Data4: -1703665694
+    Path: event:/BomberAttackSound
   _projectilePrefab: {fileID: -6575079870067616868, guid: 54b2b814ed41d634fb9b00046da5fd50, type: 3}
   _projectileSpawnPoint: {fileID: 7188822983357739112}
 --- !u!1001 &8843333359439377779

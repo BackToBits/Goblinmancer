@@ -123,11 +123,11 @@ MonoBehaviour:
   _targetingPriority: 0
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 170297226
+      Data2: 1154598621
+      Data3: 315340203
+      Data4: -757181483
+    Path: event:/AlchemistAttack
   _projectilePrefab: {fileID: 7282030059829994036, guid: 514399ebb1062d24c80703a7ef29ed3e, type: 3}
   _projectileSpawnPoint: {fileID: 4198934976483933517}
 --- !u!114 &1263423254977355793
@@ -152,11 +152,11 @@ MonoBehaviour:
   _targetingPriority: 0
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 170297226
+      Data2: 1154598621
+      Data3: 315340203
+      Data4: -757181483
+    Path: event:/AlchemistAttack
   _projectilePrefab: {fileID: -5041190250800825566, guid: 5b4484895f4adb647b2f24016e38b85e, type: 3}
   _projectileSpawnPoint: {fileID: 4198934976483933517}
 --- !u!1001 &4288398166396378119

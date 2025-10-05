@@ -287,29 +287,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProtectiveSpell
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1270901288
+      Data2: 1189625640
+      Data3: 803502501
+      Data4: 2130731895
+    Path: event:/ButtonClick
   _menuTransform: {fileID: 1563263415339220317}
   _animationDuration: 0.5
   _closedPosition: {x: 0, y: -300, z: 0}
   _superOpenOffset: 120
-  _castingCost:
-    bodyPrice: 3
-    bloodPrice: 30
   _cooldown: 30
   _cooldownText: {fileID: 3229049489602690624}
   _bodyCostText: {fileID: 6059919309753739527}
   _bloodCostText: {fileID: 2819152213774908702}
+  _spellType: 0
   _spellSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1651957904
+      Data2: 1187250829
+      Data3: 131926706
+      Data4: -1843090420
+    Path: event:/EnergyShield
   _duration: 5
   _barrierHealth: 100
   _effectRadius: 5
