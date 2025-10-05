@@ -52,11 +52,11 @@ MonoBehaviour:
   _size: 0.5
   _impactSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2032071412
+      Data2: 1275477274
+      Data3: 764099465
+      Data4: 476886159
+    Path: event:/Bomb
   _explosionRadius: 20
   _curvature: 0.5
 --- !u!1 &6132255020565134286

@@ -52,11 +52,11 @@ MonoBehaviour:
   _size: 0.5
   _impactSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1889272595
+      Data2: 1134149620
+      Data3: 674313375
+      Data4: 1052026887
+    Path: event:/HealthFlask
   _explosionRadius: 5
   _curvature: 1
 --- !u!1001 &2556991856719971862

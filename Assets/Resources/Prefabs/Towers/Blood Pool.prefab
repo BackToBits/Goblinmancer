@@ -115,11 +115,11 @@ MonoBehaviour:
   _towerType: 0
   _placeSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 75096830
+      Data2: 1077793542
+      Data3: -775496769
+      Data4: -1454389552
+    Path: event:/Build
   _interactSound:
     Guid:
       Data1: -1270901288

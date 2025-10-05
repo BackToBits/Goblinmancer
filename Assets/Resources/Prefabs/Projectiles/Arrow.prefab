@@ -52,11 +52,11 @@ MonoBehaviour:
   _size: 0.5
   _impactSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 98087994
+      Data2: 1142781178
+      Data3: -1873845588
+      Data4: 231793028
+    Path: event:/ArrowImpact
 --- !u!1001 &7605748745665499680
 PrefabInstance:
   m_ObjectHideFlags: 0

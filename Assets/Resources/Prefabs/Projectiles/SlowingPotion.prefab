@@ -52,11 +52,11 @@ MonoBehaviour:
   _size: 0.5
   _impactSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1672534747
+      Data2: 1257452845
+      Data3: 2114857900
+      Data4: 1407680021
+    Path: event:/DamageFlask
   _explosionRadius: 5
   _curvature: 0.5
   _slowAmount: 60

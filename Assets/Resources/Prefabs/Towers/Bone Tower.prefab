@@ -117,11 +117,11 @@ MonoBehaviour:
   _towerType: 0
   _placeSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 75096830
+      Data2: 1077793542
+      Data3: -775496769
+      Data4: -1454389552
+    Path: event:/Build
   _interactSound:
     Guid:
       Data1: -1270901288
@@ -152,11 +152,11 @@ MonoBehaviour:
   _targetingPriority: 0
   _attackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 798774945
+      Data2: 1170780019
+      Data3: 1246141368
+      Data4: -1703665694
+    Path: event:/BomberAttackSound
   _projectilePrefab: {fileID: -6575079870067616868, guid: 1e29fce6cfbf29446b66dc45b9e9c497, type: 3}
   _projectileSpawnPoint: {fileID: 7202520186880782380}
 --- !u!1 &6641396162422633720
