@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8295729293443367469}
   - component: {fileID: 8593722604897481490}
   - component: {fileID: 772291779143942105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347615961968178396}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 8389789276964654732}
   - component: {fileID: 6647767775031414312}
   - component: {fileID: 7800435629764996490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 5665511103590708095}
   - component: {fileID: -4538686881225131809}
   - component: {fileID: 7591909486975812986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VampireGoblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ MonoBehaviour:
   _spawnTweenDuration: 1
   _animator: {fileID: 0}
   cemetery: {fileID: 0}
-  spawnRadius: 5
+  spawnSize: {x: 15, y: 15}
   unitType: 3
   _spawnSound:
     Guid:

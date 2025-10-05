@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3367147025405800019}
   - component: {fileID: 7148050295888517780}
   - component: {fileID: 8486192010664964669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Goblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,9 +136,105 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8092702342287867835, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7409424846342233334, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6861966694554293337, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5473021666640763784, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228685561633089252, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3346804815276368459, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3285332565807590778, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1922985081075760721, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1919116782411699676, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -729585743644975882, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 741808593568725213, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 801754290103193122, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
       propertyPath: m_Name
       value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200461664986335408, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581417133356221152, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957456875788736699, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618491494720414366, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665919713021461149, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828643896294292898, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980542448528490925, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215344980187231779, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668879994954125434, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211419048432410349, guid: 8adbeaa97033c1e4283e215a312d7fa5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

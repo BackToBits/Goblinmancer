@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5053830068302542396}
   - component: {fileID: 443447381351863103}
   - component: {fileID: 4440692974190417714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GhoulGoblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
   _spawnTweenDuration: 1
   _animator: {fileID: 0}
   cemetery: {fileID: 0}
-  spawnRadius: 5
+  spawnSize: {x: 15, y: 15}
   unitType: 2
   _spawnSound:
     Guid:
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8547718672912777178}
   - component: {fileID: 1581754274630907694}
   - component: {fileID: 6307200038907414145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 3146027879140644679}
   - component: {fileID: 7568155052290283093}
   - component: {fileID: 8425864989151380261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

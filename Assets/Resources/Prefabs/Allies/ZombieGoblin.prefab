@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3367147025405800019}
   - component: {fileID: 1818889335017361458}
   - component: {fileID: -4538686881225131809}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ZombieGoblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
   _spawnTweenDuration: 1
   _animator: {fileID: 8040609503763788218}
   cemetery: {fileID: 0}
-  spawnRadius: 5
+  spawnSize: {x: 15, y: 15}
   unitType: 0
   _spawnSound:
     Guid:
@@ -144,9 +144,105 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8092702342287867835, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7409424846342233334, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6861966694554293337, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5473021666640763784, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228685561633089252, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3346804815276368459, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3285332565807590778, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1922985081075760721, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1919116782411699676, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -729585743644975882, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 741808593568725213, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 801754290103193122, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
       propertyPath: m_Name
       value: Zombie goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200461664986335408, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581417133356221152, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957456875788736699, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618491494720414366, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665919713021461149, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828643896294292898, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980542448528490925, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215344980187231779, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668879994954125434, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211419048432410349, guid: b3ca7105763fdec4c96ca864c98b1cfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
