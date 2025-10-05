@@ -493,7 +493,7 @@ MonoBehaviour:
   - {fileID: -4892195224363320645}
   StringsBanks:
   - {fileID: 4270119258077763817}
-  cacheTime: 638952915711475696
+  cacheTime: 638952925572135988
   cacheVersion: 131632
 --- !u!114 &379727500289217172
 MonoBehaviour:
@@ -537,7 +537,7 @@ MonoBehaviour:
   Path: Assets/Resources/Audio/Desktop/Game.bank
   Name: Game
   StudioPath: bank:/Game
-  lastModified: 638952915711230809
+  lastModified: 638952925572135988
   FileSizes: []
   Exists: 1
 --- !u!114 &1499321727392329557
@@ -675,7 +675,7 @@ MonoBehaviour:
   - {fileID: 4613563521393850495}
   MinDistance: 1
   MaxDistance: 20
-  Length: 114251
+  Length: 114331
 --- !u!114 &4086722753582833948
 MonoBehaviour:
   m_ObjectHideFlags: 0
