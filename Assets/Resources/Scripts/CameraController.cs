@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] BaseMenu _pauseMenu;
     private Camera _camera;
     private Vector3 _cameraForward;
-    private InteractionMode _currentMode;
+    private InteractionMode _currentMode = InteractionMode.Selecting;
     private Tile _currentlyHighlightedTile;
     TowerPrice _currentTower;
     BaseSpell _currentSpell;

@@ -59,20 +59,19 @@ public class SpellUnlockMenu : BaseMenu
         return null;
     }
 
+    public override void CloseMenu()
+    {
+        if (_state == MenuState.Closed) return;
+
+        base.CloseMenu();
+        GameManager.Instance.ShowHUD();
+    }
+
     public override void OpenMenu()
     {
         if (_state == MenuState.Open) return;
-
-        _menuTransform.DOLocalMove(Vector3.zero, _animationDuration).SetEase(Ease.OutBack);
-        _state = MenuState.Open;
-    }
-
-    public override void CloseMenu()
-    {
-        Debug.Log("Closing Spell Unlock Menu");
-        if (_state == MenuState.Closed) return;
-        Debug.Log("Closed Spell Unlock Menu");
-        _menuTransform.DOLocalMove(_closedPosition, _animationDuration).SetEase(Ease.OutBack);
-        _state = MenuState.Closed;
+        
+        base.OpenMenu();
+        GameManager.Instance.HideHUD();
     }
 }

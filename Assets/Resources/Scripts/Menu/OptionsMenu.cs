@@ -2,13 +2,14 @@ using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OptionsMenu : BaseMenu
+public class OptionsMenu : MonoBehaviour
 {
     [SerializeField] Slider MasterVolumeSlider;
     [SerializeField] Slider MusicVolumeSlider;
     [SerializeField] Slider AmbienceVolumeSlider;
     [SerializeField] Slider SFXVolumeSlider;
-    public override void OpenMenu()
+    [SerializeField] EventReference _menuInteractionSound;
+    public void OpenMenu()
     {
         gameObject.SetActive(true);
         MasterVolumeSlider.value = AudioManager.instance.masterVolume;
@@ -66,7 +67,7 @@ public class OptionsMenu : BaseMenu
         AudioManager.instance.SFXMuted = false;
     }
     
-    public override void CloseMenu()
+    public void CloseMenu()
     {
         AudioManager.instance.PlayOneShot(_menuInteractionSound, transform.position);
         gameObject.SetActive(false);

@@ -3,9 +3,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : BaseMenu
+public class MainMenu : MonoBehaviour
 {
     [SerializeField] BaseMenu _optionsMenu;
+    [SerializeField] EventReference _menuInteractionSound;
     public void PlayGame()
     {
         AudioManager.instance.PlayOneShot(_menuInteractionSound, transform.position);
@@ -28,13 +29,5 @@ public class MainMenu : BaseMenu
     {
         AudioManager.instance.PlayOneShot(_menuInteractionSound, transform.position);
         Application.OpenURL(url);
-    }
-
-    public override void OpenMenu()
-    {
-    }
-
-    public override void CloseMenu()
-    {
     }
 }

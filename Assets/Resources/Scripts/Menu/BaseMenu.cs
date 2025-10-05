@@ -1,3 +1,4 @@
+using DG.Tweening;
 using FMODUnity;
 using UnityEngine;
 
@@ -7,15 +8,27 @@ public abstract class BaseMenu : MonoBehaviour
     [SerializeField] protected RectTransform _menuTransform;
     [SerializeField] protected float _animationDuration = 0.5f;
     [SerializeField] protected Vector3 _closedPosition;
-    [SerializeField] protected MenuState _state = MenuState.Closed;
+    protected MenuState _state = MenuState.Closed;
 
     /// <summary>
     /// Opens the menu.
     /// </summary>
-    public abstract void OpenMenu();
+    public virtual void OpenMenu()
+    {
+        if (_state == MenuState.Open) return;
+
+        _state = MenuState.Open;
+        _menuTransform.DOLocalMove(Vector3.zero, _animationDuration).SetEase(Ease.OutBack);
+    }
 
     /// <summary>
     /// Closes the menu.
     /// </summary>
-    public abstract void CloseMenu();
+    public virtual void CloseMenu()
+    {
+        if (_state == MenuState.Closed) return;
+
+        _state = MenuState.Closed;
+        _menuTransform.DOLocalMove(_closedPosition, _animationDuration).SetEase(Ease.InBack);
+    }
 }

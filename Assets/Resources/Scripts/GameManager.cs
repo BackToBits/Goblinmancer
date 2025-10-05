@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] CancelMenu _cancelMenu;
     [SerializeField] SpellCastingMenu _spellCastingMenu;
     [SerializeField] SpellUnlockMenu _spellUnlockMenu;
+    [SerializeField] NextRoundMenu _nextRoundMenu;
     List<AllyUnit> _alliedUnits = new List<AllyUnit>();
     List<EnemyUnit> _enemyUnits = new List<EnemyUnit>();
     List<BaseTower> _towers = new List<BaseTower>();
@@ -65,14 +66,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (_currentPhase == PhaseEnum.Build)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                StartCoroutine(StartRoundCoroutine());
-            }
-        }
-        else if (_currentPhase == PhaseEnum.Combat)
+        if (_currentPhase == PhaseEnum.Combat)
         {
             if (_enemyUnits.Count == 0)
             {
@@ -120,6 +114,8 @@ public class GameManager : MonoBehaviour
         }
         StartCoroutine(MapSpawnAnimation());
 
+        _nextRoundMenu.UpdateEnemyIcons(GetNextRound(), _currentRound + 1);
+
         _blood = _initialResources.bloodPrice;
     }
 
@@ -148,7 +144,7 @@ public class GameManager : MonoBehaviour
                 if (rand <= cumulativeProbability)
                 {
                     _enemyUnits.Add(Instantiate(
-                        roundEnemy.enemyUnit,
+                        roundEnemy.enemy.enemyUnit,
                         _enemySpawnPoint.position + new Vector3(Random.Range(-_enemySpawnSize.x, _enemySpawnSize.x), 0, Random.Range(-_enemySpawnSize.y, _enemySpawnSize.y)),
                         Quaternion.identity
                     ));
@@ -160,9 +156,8 @@ public class GameManager : MonoBehaviour
         {
             for (int j = 0; j < fixedEnemy.amount; j++)
             {
-                Debug.Log("Spawning fixed enemy: " + fixedEnemy.enemyUnit.name);
                 _enemyUnits.Add(Instantiate(
-                    fixedEnemy.enemyUnit,
+                    fixedEnemy.enemy.enemyUnit,
                     _enemySpawnPoint.position + new Vector3(Random.Range(-_enemySpawnSize.x, _enemySpawnSize.x), 0, Random.Range(-_enemySpawnSize.y, _enemySpawnSize.y)),
                     Quaternion.identity
                 ));
@@ -245,6 +240,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("All rounds completed!");
         }
         _currentPhase = PhaseEnum.Build;
+
+        _nextRoundMenu.UpdateEnemyIcons(GetNextRound(), _currentRound + 1);
+
         ShowHUD();
         _spellCastingMenu.CloseMenu();
     }
@@ -573,6 +571,13 @@ public class GameManager : MonoBehaviour
         {
             maxBodies += cemetery.Capacity;
         }
+        foreach (AllyUnit unit in _alliedUnits)
+        {
+            if (unit.unitType != AllyUnitsEnum.Zombie)
+            {
+                maxBodies--; // Count non-zombie units against max bodies
+            }
+        }
         return maxBodies;
     }
 
@@ -756,6 +761,7 @@ public class GameManager : MonoBehaviour
     {
         if (_currentPhase == PhaseEnum.Build)
         {
+            _nextRoundMenu.CloseMenu();
             _constructionMenu.CloseMenu();
         }
         else if (_currentPhase == PhaseEnum.Combat)
@@ -776,7 +782,7 @@ public class GameManager : MonoBehaviour
         if (_currentPhase == PhaseEnum.Build)
         {
             _constructionMenu.OpenMenu();
-            _constructionMenu.OpenMenu();
+            _nextRoundMenu.OpenMenu();
             _cancelMenu.CloseMenu();
             _unitMenu.CloseMenu();
             _spellUnlockMenu.CloseMenu();
@@ -788,6 +794,7 @@ public class GameManager : MonoBehaviour
             _constructionMenu.CloseMenu();
             _unitMenu.CloseMenu();
             _spellUnlockMenu.CloseMenu();
+            _nextRoundMenu.CloseMenu();
         }
     }
 
@@ -853,6 +860,26 @@ public class GameManager : MonoBehaviour
         return _currentPhase;
     }
 
+    public Round GetNextRound()
+    {
+        if (_currentRound < _rounds.Length)
+        {
+            return _rounds[_currentRound];
+        }
+        else
+        {
+            return _freePlay;
+        }
+    }
+
+    public void StartNextRound()
+    {
+        if (_currentPhase == PhaseEnum.Build)
+        {
+            StartCoroutine(StartRoundCoroutine());
+        }
+    }
+
     private IEnumerator MapSpawnAnimation()
     {
         for (int i = 0; i < _mapWidth; i++)
@@ -861,6 +888,8 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.15f);
         }
         StartCoroutine(InitialZombieSpawns());
+
+        ShowHUD();
     }
     private IEnumerator TileRowAnimation(int row)
     {

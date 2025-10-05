@@ -215,6 +215,7 @@ Transform:
   - {fileID: 1504446568}
   - {fileID: 562308274}
   - {fileID: 4745809301517141479}
+  - {fileID: 287148991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &266918627 stripped
@@ -228,6 +229,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b10b489c36c8742bd7db51fc078841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnitMenu
+--- !u!4 &287148991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+  m_PrefabInstance: {fileID: 1030780038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &287148992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1546250562422638390, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+  m_PrefabInstance: {fileID: 1030780038}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9cc48c8dfb7cb4bb4678536c1668c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NextRoundMenu
 --- !u!114 &562308273 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7754157955218228845, guid: e84a1d99da24fbd42a6dcd62dce694e0, type: 3}
@@ -392,33 +409,51 @@ MonoBehaviour:
   _mapWidth: 23
   _mapHeight: 23
   _rounds:
-  - RandomEnemiesInRound: []
-    TotalRandomEnemies: 0
-    FixedEnemiesInRound:
-    - enemyUnit: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
-      amount: 4
   - RandomEnemiesInRound:
-    - enemyUnit: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
+    - enemy: {fileID: 11400000, guid: 2f351b5047530244a99f7d67febf84af, type: 2}
+      Probability: 0.2
+    - enemy: {fileID: 11400000, guid: cf46a9e792bef974fac291d5848bb3f2, type: 2}
+      Probability: 0.2
+    - enemy: {fileID: 11400000, guid: e3c617bee53ee7d4a9401c1eda18efb3, type: 2}
+      Probability: 0.2
+    - enemy: {fileID: 11400000, guid: f4d68ebf75c8e6040bf889a5b63e400c, type: 2}
+      Probability: 0.2
+    - enemy: {fileID: 11400000, guid: 2430d09c8ac374a4d810763211900c48, type: 2}
+      Probability: 0.2
+    TotalRandomEnemies: 5
+    FixedEnemiesInRound:
+    - enemy: {fileID: 11400000, guid: 2f351b5047530244a99f7d67febf84af, type: 2}
+      amount: 5
+    - enemy: {fileID: 11400000, guid: cf46a9e792bef974fac291d5848bb3f2, type: 2}
+      amount: 4
+    - enemy: {fileID: 11400000, guid: e3c617bee53ee7d4a9401c1eda18efb3, type: 2}
+      amount: 3
+    - enemy: {fileID: 11400000, guid: f4d68ebf75c8e6040bf889a5b63e400c, type: 2}
+      amount: 2
+    - enemy: {fileID: 11400000, guid: 2430d09c8ac374a4d810763211900c48, type: 2}
+      amount: 1
+  - RandomEnemiesInRound:
+    - enemy: {fileID: 0}
       Probability: 0.5
-    - enemyUnit: {fileID: 4035190016762269728, guid: 37bac6987c8960843beecb0b5e0be348, type: 3}
+    - enemy: {fileID: 0}
       Probability: 0.5
     TotalRandomEnemies: 1
     FixedEnemiesInRound:
-    - enemyUnit: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
+    - enemy: {fileID: 0}
       amount: 3
-    - enemyUnit: {fileID: 4035190016762269728, guid: 37bac6987c8960843beecb0b5e0be348, type: 3}
+    - enemy: {fileID: 0}
       amount: 1
   _freePlay:
     RandomEnemiesInRound:
-    - enemyUnit: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
+    - enemy: {fileID: 0}
       Probability: 0.3
-    - enemyUnit: {fileID: 4035190016762269728, guid: 37bac6987c8960843beecb0b5e0be348, type: 3}
+    - enemy: {fileID: 0}
       Probability: 0.2
-    - enemyUnit: {fileID: 2577120941314641979, guid: cb950e8e25b431f44b1eae7c8151f505, type: 3}
+    - enemy: {fileID: 0}
       Probability: 0.2
-    - enemyUnit: {fileID: 1939611623146773574, guid: 20dc24c2a8ee40a4b8a5c49b3ee9c081, type: 3}
+    - enemy: {fileID: 0}
       Probability: 0.2
-    - enemyUnit: {fileID: 5948013963128131574, guid: 96ffdf476034ee648a86ca433d2e0846, type: 3}
+    - enemy: {fileID: 0}
       Probability: 0.1
     TotalRandomEnemies: 10
     FixedEnemiesInRound: []
@@ -505,6 +540,7 @@ MonoBehaviour:
   _cancelMenu: {fileID: 1504446567}
   _spellCastingMenu: {fileID: 4745809301517141480}
   _spellUnlockMenu: {fileID: 562308273}
+  _nextRoundMenu: {fileID: 287148992}
 --- !u!4 &771793857
 Transform:
   m_ObjectHideFlags: 0
@@ -536,6 +572,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3345888700849065739, guid: 6605b56fd287d264b9583ca6055a03d7, type: 3}
   m_PrefabInstance: {fileID: 1456060227}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1030780038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 160927016}
+    m_Modifications:
+    - target: {fileID: 2830825248223266538, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_Name
+      value: NextRoundMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907533428681362685, guid: 8526506579535474c8fe53bce706ed63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8526506579535474c8fe53bce706ed63, type: 3}
 --- !u!1 &1033844806
 GameObject:
   m_ObjectHideFlags: 0
