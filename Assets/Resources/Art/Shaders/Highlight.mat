@@ -45,7 +45,7 @@ Material:
     - _Amplitude: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 0.5
+    - _Speed: 5
     m_Colors:
     - _Color: {r: 0.6184143, g: 1, b: 0.38050297, a: 1}
     - _EmissionColor: {r: 1.566038, g: 0.5766597, b: 0.03693485, a: 1}

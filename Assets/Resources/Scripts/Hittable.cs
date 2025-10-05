@@ -74,6 +74,7 @@ public class Hittable : MonoBehaviour
         if (effect != null)
         {
             Instantiate(effect, transform);
+            StartCoroutine(effect.GetComponent<Shield>().ActivateShield());
         }
         if (duration > 0f)
         {
@@ -88,7 +89,8 @@ public class Hittable : MonoBehaviour
         if (_overHealth < 0) _overHealth = 0;
         if (effect != null)
         {
-            Destroy(effect);
+            StartCoroutine(effect.GetComponent<Shield>().DeactivateShield());
+            
         }
     }
 }

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f9437615f9eb29e44a006696bea82255, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -189,6 +189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4333230863805310321, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4892721662333834283, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.09173
@@ -229,9 +233,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5573045084240433912, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6285482626519743269, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
       propertyPath: m_Name
       value: MockUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6524972942522093482, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683459680018592074, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060984007134171408, guid: 9bb58148bacad954eba549aa844d79c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -255,7 +275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &340320758
 RectTransform:
   m_ObjectHideFlags: 0
