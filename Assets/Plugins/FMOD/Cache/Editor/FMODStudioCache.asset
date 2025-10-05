@@ -123,7 +123,7 @@ MonoBehaviour:
   Path: Assets/Resources/Audio/Desktop/Menu.bank
   Name: Menu
   StudioPath: bank:/Menu
-  lastModified: 638952698511831326
+  lastModified: 638952731432191598
   FileSizes: []
   Exists: 1
 --- !u!114 &-7605895163121441642
@@ -303,7 +303,7 @@ MonoBehaviour:
   Path: Assets/Resources/Audio/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638952915711455655
+  lastModified: 638951116867511837
   FileSizes: []
   Exists: 1
 --- !u!114 &-4854422347229759896
@@ -493,7 +493,7 @@ MonoBehaviour:
   - {fileID: -4892195224363320645}
   StringsBanks:
   - {fileID: 4270119258077763817}
-  cacheTime: 638952915711475696
+  cacheTime: 638952924326404013
   cacheVersion: 131632
 --- !u!114 &379727500289217172
 MonoBehaviour:
@@ -537,7 +537,7 @@ MonoBehaviour:
   Path: Assets/Resources/Audio/Desktop/Game.bank
   Name: Game
   StudioPath: bank:/Game
-  lastModified: 638952915711230809
+  lastModified: 638952924326273528
   FileSizes: []
   Exists: 1
 --- !u!114 &1499321727392329557
@@ -718,7 +718,7 @@ MonoBehaviour:
   Path: Assets/Resources/Audio/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638952915711475696
+  lastModified: 638952924326404013
   FileSizes:
   - Name: 
     Value: 2314
@@ -901,8 +901,8 @@ MonoBehaviour:
     Data3: 803502501
     Data4: 2130731895
   Banks:
-  - {fileID: -7763510257370991289}
   - {fileID: 715803047852382264}
+  - {fileID: -7763510257370991289}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -929,8 +929,8 @@ MonoBehaviour:
     Data3: 198738608
     Data4: 865376899
   Banks:
-  - {fileID: -7763510257370991289}
   - {fileID: 715803047852382264}
+  - {fileID: -7763510257370991289}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
