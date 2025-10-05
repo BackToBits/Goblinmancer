@@ -506,11 +506,11 @@ MonoBehaviour:
   _animationDuration: 0.5
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -929158256
+      Data2: 1178558161
+      Data3: -1980706378
+      Data4: -804445486
+    Path: event:/TextPopup
 --- !u!114 &2519764967045197545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1983,11 +1983,11 @@ MonoBehaviour:
   _animationDuration: 0.5
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -929158256
+      Data2: 1178558161
+      Data3: -1980706378
+      Data4: -804445486
+    Path: event:/TextPopup
 --- !u!114 &8762585481444152151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,11 +3116,11 @@ MonoBehaviour:
   _animationDuration: 0.5
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -929158256
+      Data2: 1178558161
+      Data3: -1980706378
+      Data4: -804445486
+    Path: event:/TextPopup
 --- !u!114 &1919048177201142760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3456,11 +3456,11 @@ MonoBehaviour:
   _animationDuration: 0.5
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -929158256
+      Data2: 1178558161
+      Data3: -1980706378
+      Data4: -804445486
+    Path: event:/TextPopup
 --- !u!114 &9035479551638126529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,11 +3796,11 @@ MonoBehaviour:
   _animationDuration: 0.5
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -929158256
+      Data2: 1178558161
+      Data3: -1980706378
+      Data4: -804445486
+    Path: event:/TextPopup
 --- !u!114 &8513643134266818654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,11 +5308,11 @@ MonoBehaviour:
   _animationDuration: 0.5
   _menuInteractionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -929158256
+      Data2: 1178558161
+      Data3: -1980706378
+      Data4: -804445486
+    Path: event:/TextPopup
 --- !u!114 &5066918583893957378
 MonoBehaviour:
   m_ObjectHideFlags: 0
