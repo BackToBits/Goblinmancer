@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: b7a27b50651f13543b39cbebf2269231
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4050
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832d1e9322202664186c2abb3fb1feea
+      internalID: 1759213028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4050
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cce37deebeaeb5499b10948974352a9
+      internalID: 526774759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4050
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7bb99aaa633ed4dafdd5e8ee8c0757
+      internalID: -1243809699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4050
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9499f79b82b92744fbe2603dbe18adea
+      internalID: 414419557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 4050
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed74552ff99ce84bba52b258289e75f
+      internalID: -185536102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 4050
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0d6bbeef5bcf744b36d49f61a76f00
+      internalID: 1452182388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54709ca0190f53844b1716cad7b7cf2d
+      internalID: -1790073111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_7
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2700
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6987026047d9f46955e41c447de3ed
+      internalID: -16413304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_8
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2700
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba1615cdf0e79f45bea02fd24475de8
+      internalID: -677636827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_9
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2700
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c1ecb4c448bd64599900f1085785da
+      internalID: -772529592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_10
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 2700
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8905ce161fecb7c42a4caa2c0886c183
+      internalID: 843739307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_11
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 2700
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d20138de52790b4abbcd93b2703a96a
+      internalID: -1262079442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1355
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2b1c8ac1919ed43984c56c156fc9c1
+      internalID: 939949560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1350
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4588f0c82b496e54db2ad6f6636b1501
+      internalID: 375115089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_14
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1350
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d783aa12a30e5504ca08ce674a43721d
+      internalID: -37257589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_15
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1350
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bb5aa14f2b8204ea12a29d887acba4
+      internalID: -1670118518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_16
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1350
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efde12b2bdbf2e94aad36e064fa8a4c2
+      internalID: 81334243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_17
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1350
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7604851822f4fc46bc15624927fd8ff
+      internalID: -933250992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8856ee829e9f37741bad44a74ee34e6d
+      internalID: -1105273624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_19
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 1920
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81470bd3b1f5334eae0b23781baf949
+      internalID: 2032995057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ba8de186c4c994e965fae3f3d9a34e
+      internalID: -1808845484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_21
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb387a98903c774687e6e1cceaa828d
+      internalID: -1706529580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_22
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e223bb53e61fa564daae296231a37d11
+      internalID: 1982995298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackToBits MainBanner PlusRes 2023-24_23
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b2c9fc52bf9f24ebbf58d10f809518
+      internalID: -1341623611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab4f827e16adcdf499f3bcc03683d2bc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":4.0},"gridSpriteSize":{"x":1920.0,"y":1350.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BackToBits MainBanner PlusRes 2023-24_0: 1759213028
+      BackToBits MainBanner PlusRes 2023-24_1: 526774759
+      BackToBits MainBanner PlusRes 2023-24_10: 843739307
+      BackToBits MainBanner PlusRes 2023-24_11: -1262079442
+      BackToBits MainBanner PlusRes 2023-24_12: 939949560
+      BackToBits MainBanner PlusRes 2023-24_13: 375115089
+      BackToBits MainBanner PlusRes 2023-24_14: -37257589
+      BackToBits MainBanner PlusRes 2023-24_15: -1670118518
+      BackToBits MainBanner PlusRes 2023-24_16: 81334243
+      BackToBits MainBanner PlusRes 2023-24_17: -933250992
+      BackToBits MainBanner PlusRes 2023-24_18: -1105273624
+      BackToBits MainBanner PlusRes 2023-24_19: 2032995057
+      BackToBits MainBanner PlusRes 2023-24_2: -1243809699
+      BackToBits MainBanner PlusRes 2023-24_20: -1808845484
+      BackToBits MainBanner PlusRes 2023-24_21: -1706529580
+      BackToBits MainBanner PlusRes 2023-24_22: 1982995298
+      BackToBits MainBanner PlusRes 2023-24_23: -1341623611
+      BackToBits MainBanner PlusRes 2023-24_3: 414419557
+      BackToBits MainBanner PlusRes 2023-24_4: -185536102
+      BackToBits MainBanner PlusRes 2023-24_5: 1452182388
+      BackToBits MainBanner PlusRes 2023-24_6: -1790073111
+      BackToBits MainBanner PlusRes 2023-24_7: -16413304
+      BackToBits MainBanner PlusRes 2023-24_8: -677636827
+      BackToBits MainBanner PlusRes 2023-24_9: -772529592
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
