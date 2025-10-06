@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5679241017aafa345842c0a25fbc8210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackingTower
-  _maxHealth: 10
+  _maxHealth: 15
   _size: 0.5
   _deathSound:
     Guid:
@@ -121,8 +121,8 @@ MonoBehaviour:
   _hastenMultiplier: 1
   paused: 1
   isAlly: 0
-  _damage: 50
-  _attackCooldown: 3
+  _damage: 20
+  _attackCooldown: 12
   _range: 10000
   _targetingPriority: 3
   _attackSound:
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dda8bdd4767c0b43850e6be25ab76cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  outlineLayerName: Outline
 --- !u!1001 &1825240480419671306
 PrefabInstance:
   m_ObjectHideFlags: 0

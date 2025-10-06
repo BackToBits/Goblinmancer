@@ -296,7 +296,7 @@ MonoBehaviour:
   _animationDuration: 0.5
   _closedPosition: {x: 0, y: -300, z: 0}
   _superOpenOffset: 120
-  _cooldown: 30
+  _cooldown: 3
   _cooldownText: {fileID: 3229049489602690624}
   _bodyCostText: {fileID: 6059919309753739527}
   _bloodCostText: {fileID: 2819152213774908702}
@@ -309,7 +309,7 @@ MonoBehaviour:
       Data4: -1190302524
     Path: event:/LightingSpell
   _lightningPrefab: {fileID: 4634010417269429850, guid: d1b35f420943a1a4b9ccc9be0a8be9f0, type: 3}
-  _damage: 100
+  _damage: 15
 --- !u!1 &4053052581657761018
 GameObject:
   m_ObjectHideFlags: 0

@@ -296,7 +296,7 @@ MonoBehaviour:
   _animationDuration: 1
   _closedPosition: {x: 0, y: -300, z: 0}
   _superOpenOffset: 120
-  _cooldown: 20
+  _cooldown: 3
   _cooldownText: {fileID: 3229049489602690624}
   _bodyCostText: {fileID: 6059919309753739527}
   _bloodCostText: {fileID: 2819152213774908702}

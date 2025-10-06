@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e267500560b29714b9a6251bf9895c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinomancyStudy
-  _maxHealth: 50
+  _maxHealth: 20
   _size: 0.5
   _deathSound:
     Guid:
