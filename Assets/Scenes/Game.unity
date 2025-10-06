@@ -722,7 +722,7 @@ MonoBehaviour:
       Probability: 0.2
     - enemy: {fileID: 11400000, guid: 2430d09c8ac374a4d810763211900c48, type: 2}
       Probability: 0.1
-    TotalRandomEnemies: 100
+    TotalRandomEnemies: 15
     FixedEnemiesInRound:
     - enemy: {fileID: 11400000, guid: 2f351b5047530244a99f7d67febf84af, type: 2}
       amount: 0
