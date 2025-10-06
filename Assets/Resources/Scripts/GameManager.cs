@@ -273,7 +273,7 @@ public class GameManager : MonoBehaviour
     {
         if(_roundEnding) return;
 
-        _roundEnding = true;
+        
         if (_currentPhase != PhaseEnum.Combat) return;
         AudioManager.instance.ChangePhase();
         foreach (EnemyUnit unit in _enemyUnits)
@@ -284,7 +284,7 @@ public class GameManager : MonoBehaviour
                 return;
             }
         }
-
+        _roundEnding = true;
         foreach (AllyUnit unit in _alliedUnits)
         {
             unit.Pause();
