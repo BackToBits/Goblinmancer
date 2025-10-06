@@ -549,7 +549,7 @@ MonoBehaviour:
   _timeBetweenSpawns: 0.05
   _castle: {fileID: 1402729768}
   _initialResources:
-    bodyPrice: 9
+    bodyPrice: 10
     bloodPrice: 0
   _tilePrefab: {fileID: 7562894851678332238, guid: 8ed5b9d31768877409b23bc26bd753f5, type: 3}
   _tileSize: 5
@@ -801,7 +801,7 @@ MonoBehaviour:
   - towerType: 0
     towerPrefab: {fileID: 7654186673438258621, guid: 30006a62f8d6e0844baf25cd5fe86d2f, type: 3}
     price:
-      bodyPrice: 10
+      bodyPrice: 7
       bloodPrice: 0
   - towerType: 1
     towerPrefab: {fileID: 8311386977605958815, guid: e813428c0e57aff4da194bf437e757a4, type: 3}
