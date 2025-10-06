@@ -714,8 +714,8 @@ MonoBehaviour:
   - unitType: 4
     unitPrefab: {fileID: 7148454188158189209, guid: 5c248d0829bce914396e511683a2a249, type: 3}
     price:
-      bodyPrice: 20
-      bloodPrice: 0
+      bodyPrice: 10
+      bloodPrice: 10
   _spellUnlockPrices:
   - spellType: 0
     spellPrefab: {fileID: 5932067281995074945, guid: 5247902cedd2fa64f8ca645afc38fb99, type: 3}
@@ -725,13 +725,13 @@ MonoBehaviour:
   - spellType: 1
     spellPrefab: {fileID: 4107687205794462187, guid: 3c46edcd9f3dd5b44ba8476f4e296016, type: 3}
     price:
-      bodyPrice: 10
-      bloodPrice: 20
+      bodyPrice: 6
+      bloodPrice: 30
   - spellType: 2
     spellPrefab: {fileID: 112108931300903100, guid: b23d1dae19dce4e4db0eff10453650a9, type: 3}
     price:
-      bodyPrice: 25
-      bloodPrice: 50
+      bodyPrice: 4
+      bloodPrice: 15
   _spellCastingPrices:
   - spellType: 0
     spellPrefab: {fileID: 5932067281995074945, guid: 5247902cedd2fa64f8ca645afc38fb99, type: 3}
@@ -741,13 +741,13 @@ MonoBehaviour:
   - spellType: 1
     spellPrefab: {fileID: 4107687205794462187, guid: 3c46edcd9f3dd5b44ba8476f4e296016, type: 3}
     price:
-      bodyPrice: 1
-      bloodPrice: 5
+      bodyPrice: 0
+      bloodPrice: 30
   - spellType: 2
-    spellPrefab: {fileID: 0}
+    spellPrefab: {fileID: 112108931300903100, guid: b23d1dae19dce4e4db0eff10453650a9, type: 3}
     price:
-      bodyPrice: 5
-      bloodPrice: 15
+      bodyPrice: 0
+      bloodPrice: 10
   _towerPrices:
   - towerType: 0
     towerPrefab: {fileID: 7654186673438258621, guid: 30006a62f8d6e0844baf25cd5fe86d2f, type: 3}
@@ -757,28 +757,28 @@ MonoBehaviour:
   - towerType: 1
     towerPrefab: {fileID: 8311386977605958815, guid: e813428c0e57aff4da194bf437e757a4, type: 3}
     price:
-      bodyPrice: 1
-      bloodPrice: 15
+      bodyPrice: 5
+      bloodPrice: 20
   - towerType: 2
     towerPrefab: {fileID: 3668697348392549827, guid: d0abf1f66108d3b46934362f6a46037a, type: 3}
     price:
       bodyPrice: 10
-      bloodPrice: 20
+      bloodPrice: 0
   - towerType: 3
     towerPrefab: {fileID: 9047792337331519980, guid: 5e404a6f963bf524396187839ffd6e2d, type: 3}
     price:
-      bodyPrice: 30
-      bloodPrice: 30
+      bodyPrice: 13
+      bloodPrice: 10
   - towerType: 4
     towerPrefab: {fileID: 6955597548649379628, guid: 48f3f35b9e3707a47a667570f83b34c8, type: 3}
     price:
-      bodyPrice: 30
-      bloodPrice: 30
+      bodyPrice: 15
+      bloodPrice: 12
   - towerType: 5
     towerPrefab: {fileID: 3945266096304189868, guid: 1bd7eeb634adbc9428b7b39a96857f59, type: 3}
     price:
-      bodyPrice: 50
-      bloodPrice: 50
+      bodyPrice: 15
+      bloodPrice: 10
   _unitMenu: {fileID: 266918627}
   _constructionMenu: {fileID: 748327467}
   _cancelMenu: {fileID: 1504446567}

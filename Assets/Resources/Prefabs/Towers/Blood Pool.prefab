@@ -71,7 +71,7 @@ MonoBehaviour:
       Data3: -1127659362
       Data4: -392058597
     Path: event:/SelectBuilding
-  _numberBloodToAdd: 0
+  _numberBloodToAdd: 30
 --- !u!114 &-686724996019534841
 MonoBehaviour:
   m_ObjectHideFlags: 0
