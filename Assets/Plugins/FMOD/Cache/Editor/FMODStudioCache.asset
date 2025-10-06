@@ -171,8 +171,8 @@ MonoBehaviour:
     Data3: 803502501
     Data4: 2130731895
   Banks:
-  - {fileID: 1537784955045334115}
   - {fileID: 5929089086318241556}
+  - {fileID: 1537784955045334115}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -226,8 +226,8 @@ MonoBehaviour:
     Data3: 198738608
     Data4: 865376899
   Banks:
-  - {fileID: 1537784955045334115}
   - {fileID: 5929089086318241556}
+  - {fileID: 1537784955045334115}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -387,7 +387,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 100
+  MaxDistance: 200
   Length: 2117
 --- !u!114 &-85998219760230085
 MonoBehaviour:
@@ -468,7 +468,7 @@ MonoBehaviour:
   - {fileID: -1369290617054388221}
   StringsBanks:
   - {fileID: -5588288919252966754}
-  cacheTime: 638953215682483452
+  cacheTime: 638953253380930655
   cacheVersion: 131632
 --- !u!114 &298832020935282611
 MonoBehaviour:
@@ -539,7 +539,7 @@ MonoBehaviour:
   Path: Assets/Resources/Audio/Desktop/Game.bank
   Name: Game
   StudioPath: bank:/Game
-  lastModified: 638953215682483452
+  lastModified: 638953253380930655
   FileSizes: []
   Exists: 1
 --- !u!114 &1897413915186756578
