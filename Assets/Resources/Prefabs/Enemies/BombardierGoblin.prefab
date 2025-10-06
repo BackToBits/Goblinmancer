@@ -100,8 +100,8 @@ MonoBehaviour:
       Data3: 198738608
       Data4: 865376899
     Path: event:/Silence
-  _bodyReward: 1
-  _bloodReward: 10
+  _bodyReward: 3
+  _bloodReward: 5
 --- !u!114 &888841767486705833
 MonoBehaviour:
   m_ObjectHideFlags: 0

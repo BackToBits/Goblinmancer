@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53665dfae053eca4499c64ef994f9470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TripleUnit
-  _maxHealth: 500
+  _maxHealth: 30
   _size: 1.5
   _deathSound:
     Guid:
@@ -118,8 +118,9 @@ MonoBehaviour:
       Data3: -133462626
       Data4: 1049027934
     Path: event:/GoblinDeath
-  _movementSpeed: 3
+  _movementSpeed: 2
   _cooldownBetweenAttacks: 0.2
+  _retargetFrequecy: 1
   _spawnTweenDuration: 1
   _animator: {fileID: 0}
   _stepHeight: 0.5
@@ -131,8 +132,8 @@ MonoBehaviour:
       Data3: 198738608
       Data4: 865376899
     Path: event:/Silence
-  _bodyReward: 0
-  _bloodReward: 30
+  _bodyReward: 10
+  _bloodReward: 20
   _secondaryUnitPrefab1: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
   _secondaryUnitPrefab2: {fileID: 7148050295888517780, guid: db4d3d4d874e18f4593a39341d41ac09, type: 3}
   _secondaryUnitPrefab3: {fileID: 1939611623146773574, guid: 20dc24c2a8ee40a4b8a5c49b3ee9c081, type: 3}
@@ -155,8 +156,8 @@ MonoBehaviour:
   _hastenMultiplier: 1
   paused: 1
   isAlly: 0
-  _damage: 20
-  _attackCooldown: 1
+  _damage: 5
+  _attackCooldown: 6
   _range: 1
   _targetingPriority: 2
   _attackSound:
@@ -184,7 +185,7 @@ MonoBehaviour:
   paused: 1
   isAlly: 0
   _damage: 10
-  _attackCooldown: 1
+  _attackCooldown: 5
   _range: 1
   _targetingPriority: 2
   _attackSound:

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5701dc4f9f3eb154eb50a54f69f3e82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloodPool
-  _maxHealth: 50
+  _maxHealth: 40
   _size: 0.5
   _deathSound:
     Guid:
@@ -71,7 +71,7 @@ MonoBehaviour:
       Data3: -1127659362
       Data4: -392058597
     Path: event:/SelectBuilding
-  _numberBloodToAdd: 0
+  _numberBloodToAdd: 30
 --- !u!114 &-686724996019534841
 MonoBehaviour:
   m_ObjectHideFlags: 0
