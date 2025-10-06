@@ -788,6 +788,8 @@ MonoBehaviour:
   _currencyIndicator: {fileID: 696546669}
   _updateGoblinSoundsInterval: 1
   _maxExpectedGoblin: 500
+  _loseGamePrefab: {fileID: 6140276060250619496, guid: 274d5d24bfa8e804a9c4bf7aab275832, type: 3}
+  _winningScreenPrefab: {fileID: 7531177929022246122, guid: 3cddc58620f3a594eb213f9fa6e1940e, type: 3}
 --- !u!4 &771793857
 Transform:
   m_ObjectHideFlags: 0

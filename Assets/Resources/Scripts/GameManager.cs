@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public int CurrentRound => _currentRound;
     public UnitMenu unitMenu => _unitMenu;
     public List<AllyUnit> AlliedUnits => _alliedUnits;
     public static GameManager Instance { get; private set; } // Singleton instance, new game managers will override old ones
@@ -41,6 +43,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] CurrencyIndicator _currencyIndicator;
     [SerializeField] float _updateGoblinSoundsInterval = 1f;
     [SerializeField] int _maxExpectedGoblin = 500; // Used for audio manager to know the max number of goblins to expect
+    [SerializeField] GameObject _loseGamePrefab;
+    [SerializeField] GameObject _winningScreenPrefab;
     List<AllyUnit> _alliedUnits = new List<AllyUnit>();
     List<EnemyUnit> _enemyUnits = new List<EnemyUnit>();
     List<BaseTower> _towers = new List<BaseTower>();
@@ -1003,6 +1007,12 @@ public class GameManager : MonoBehaviour
         EndRound();
     }
 
+    public void LoseTheGame()
+    {
+        Debug.Log("You have lost the game!");
+        Instantiate(_loseGamePrefab, Vector3.zero, Quaternion.identity);
+    }
+
     private IEnumerator DoPortalAnimation()
     {
         Debug.Log("Starting portal animation for defeated enemies...");
@@ -1046,7 +1056,7 @@ public class GameManager : MonoBehaviour
         _currentRound++;
         if (_currentRound == _rounds.Length)
         {
-            Debug.Log("All rounds completed!");
+            Instantiate(_winningScreenPrefab, Vector3.zero, Quaternion.identity);
         }
 
         _currentPhase = PhaseEnum.Build;
