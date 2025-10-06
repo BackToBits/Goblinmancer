@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7997e3fd955ea47ae5f8f8c649a37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cemetery
-  _maxHealth: 2000
+  _maxHealth: 50
   _size: 5
   _deathSound:
     Guid:
