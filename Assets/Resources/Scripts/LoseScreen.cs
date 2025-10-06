@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,10 +9,11 @@ public class LoseScreen : MonoBehaviour
     void Start()
     {
         _roundsText.text = "Rounds Survived: " + GameManager.Instance.CurrentRound;
+        StartCoroutine(RestartGame());
     }
-    public void RestartGame()
+    IEnumerator RestartGame()
     {
-        Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");Debug.Log("Restarting game...");
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("MainMenu");
     }
 }
