@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5036329744784522731}
   - component: {fileID: 7654186673438258621}
+  - component: {fileID: 8812019917992604752}
   m_Layer: 0
   m_Name: Cemetery
   m_TagString: Untagged
@@ -73,6 +74,19 @@ MonoBehaviour:
   _capacity: 20
   _spawnSize: {x: 7.5, y: 10}
   _unitSpawnPoint: {fileID: 0}
+--- !u!114 &8812019917992604752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672822390530743412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dda8bdd4767c0b43850e6be25ab76cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HighlightStructure
+  outlineLayerName: Outline
 --- !u!1001 &5578627963647193060
 PrefabInstance:
   m_ObjectHideFlags: 0
